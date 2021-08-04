@@ -12,7 +12,7 @@ export class searchbar {
         return new Promise((resolve, reject) => {
             let searchBody: searchBody = {
                 quote: [],
-                file: [],
+                fileext: [],
                 folder: [],
                 wildcard: [],
                 minus: [],
@@ -35,7 +35,7 @@ export class searchbar {
             const resultOfQuote = this.quoteReg.exec(elem);
             const resultOfWildcardtype = this.wildcardTypeReg.exec(elem);
 
-            if (resultOfFiletype) searchBody.file.push({ value: resultOfFiletype[1] });
+            if (resultOfFiletype) searchBody.fileext.push({ value: resultOfFiletype[1] });
             else if (resultOfFoldertype) searchBody.folder.push({ value: resultOfFoldertype[1] });
             else if (resultOfMinustype) searchBody.minus.push({ value: resultOfMinustype[1] });
             else if (resultOfWildcardtype) searchBody.wildcard.push({ value: resultOfWildcardtype[0] });

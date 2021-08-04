@@ -1,12 +1,12 @@
 {
-  "name": "searchbar-ts",
+  "name": "searchbar-f-ts",
   "version": "1.0.0",
-  "description": "searchbar util",
+  "description": "searchbar functionality",
   "main": "src/index.ts",
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.spec.ts"
   },
-  "author": "JoaoMac",
+  "author": "MacJo",
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.21",

@@ -3,7 +3,7 @@ export interface arrayContent {
 }
 export interface searchBody {
     quote: Array<arrayContent>,
-    file: Array<arrayContent>,
+    fileext: Array<arrayContent>,
     folder: Array<arrayContent>,
     wildcard: Array<arrayContent>,
     minus: Array<arrayContent>,

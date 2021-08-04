@@ -51,7 +51,7 @@ describe('Searchbar class test', () => {
         const searchbarf = new searchbar();
         
         await searchbarf.searchbar(':pdf').then((result: searchBody)=>{
-            expect(result.file[0].value).to.equal('pdf');
+            expect(result.fileext[0].value).to.equal('pdf');
         });
     });
 
@@ -86,7 +86,7 @@ describe('Searchbar class test', () => {
             assert.isEmpty(result.quote);
             assert.isEmpty(result.folder);
             assert.isEmpty(result.wildcard);
-            assert.isEmpty(result.file)
+            assert.isEmpty(result.fileext)
             assert.isEmpty(result.general)
         });
 
@@ -94,7 +94,7 @@ describe('Searchbar class test', () => {
             assert.isEmpty(result.minus);
             assert.isEmpty(result.folder);
             assert.isEmpty(result.wildcard);
-            assert.isEmpty(result.file)
+            assert.isEmpty(result.fileext)
             assert.isEmpty(result.general)
         });
 
@@ -109,7 +109,7 @@ describe('Searchbar class test', () => {
         await searchbarf.searchbar('joa*').then((result: searchBody)=>{
             assert.isEmpty(result.minus);
             assert.isEmpty(result.folder);
-            assert.isEmpty(result.file);
+            assert.isEmpty(result.fileext);
             assert.isEmpty(result.quote)
             assert.isEmpty(result.general)
         });
@@ -117,7 +117,7 @@ describe('Searchbar class test', () => {
         await searchbarf.searchbar('types').then((result: searchBody)=>{
             assert.isEmpty(result.minus);
             assert.isEmpty(result.folder);
-            assert.isEmpty(result.file);
+            assert.isEmpty(result.fileext);
             assert.isEmpty(result.quote)
             assert.isEmpty(result.wildcard)
         });
@@ -125,7 +125,7 @@ describe('Searchbar class test', () => {
         await searchbarf.searchbar('#folder').then((result: searchBody)=>{
             assert.isEmpty(result.minus);
             assert.isEmpty(result.general);
-            assert.isEmpty(result.file);
+            assert.isEmpty(result.fileext);
             assert.isEmpty(result.quote)
             assert.isEmpty(result.wildcard)
         });
