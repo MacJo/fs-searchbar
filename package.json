@@ -1,16 +1,19 @@
 {
-  "name": "searchbar-f-ts",
-  "version": "1.0.0",
+  "name": "searchbar-ts",
+  "version": "1.0.4",
   "description": "searchbar functionality",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "scripts": {
-    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "build": "rm -rf ./dist/ && npm test && npx tsc"
   },
   "author": "MacJo",
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.21",
     "@types/mocha": "^9.0.0",
+    "@types/node": "^16.4.12",
     "chai": "^4.3.4",
     "mocha": "^9.0.2",
     "ts-node": "^10.1.0",

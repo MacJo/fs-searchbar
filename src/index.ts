@@ -8,6 +8,8 @@ export class searchbar {
     private minusTypeReg = new RegExp(/\-([^']*)/);
     private wildcardTypeReg = new RegExp(/([^']*)\*([^']*)/);
 
+    constructor(){}
+
     async searchbar(searchbar: string): Promise<searchBody> {
         return new Promise((resolve, reject) => {
             let searchBody: searchBody = {

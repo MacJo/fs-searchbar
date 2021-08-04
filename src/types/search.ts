@@ -1,7 +1,8 @@
-export interface arrayContent {
+interface arrayContent {
     value: string | Number
 }
-export interface searchBody {
+
+interface searchBody {
     quote: Array<arrayContent>,
     fileext: Array<arrayContent>,
     folder: Array<arrayContent>,
@@ -10,3 +11,7 @@ export interface searchBody {
     general: Array<arrayContent>,
     raw?: string
 }
+
+export {
+    searchBody
+};
