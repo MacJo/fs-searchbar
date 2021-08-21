@@ -1,7 +1,7 @@
 {
   "name": "searchbar-ts",
   "version": "1.0.4",
-  "description": "searchbar functionality",
+  "description": "fs searchbar functionality",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "scripts": {
@@ -9,7 +9,12 @@
     "build": "rm -rf ./dist/ && npm test && npx tsc"
   },
   "author": "MacJo",
+  "website": "https://github.com/MacJo/",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/MacJo/fs-searchbar",
+    "type": "git"
+  },
   "devDependencies": {
     "@types/chai": "^4.2.21",
     "@types/mocha": "^9.0.0",
