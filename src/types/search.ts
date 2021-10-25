@@ -1,5 +1,5 @@
 interface arrayContent {
-    value: string | Number
+    value: string | number
 }
 
 interface searchBody {
@@ -12,6 +12,4 @@ interface searchBody {
     raw?: string
 }
 
-export {
-    searchBody
-};
+export { searchBody };
